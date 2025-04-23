@@ -10,10 +10,13 @@ c = float(input("c: "))
 discriminant = b**2 - 4*a*c
 
 if discriminant < 0:
-    print("Die Gleichung hat keine reellen Lösungen.")
+    print("Die Gleichung hat keine reellen Lösungen, da die Diskriminante negativ ist.")
+elif discriminant == 0:
+    # Eine doppelte Nullstelle
+    x = -b / (2 * a)
+    print(f"Die Gleichung hat eine doppelte Nullstelle: x = {x}")
 else:
     # Berechnung der Nullstellen
     x1 = (-b + math.sqrt(discriminant)) / (2 * a)
     x2 = (-b - math.sqrt(discriminant)) / (2 * a)
-    
     print(f"Die Nullstellen der Gleichung sind: x1 = {x1}, x2 = {x2}")
