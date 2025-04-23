@@ -1,9 +1,10 @@
 import math
 
-# Festgelegte Parameter
-a = 1
-b = 0
-c = -4
+# Benutzerdefinierte Eingabe der Parameter
+print("Gib die Parameter für die quadratische Gleichung ax^2 + bx + c = 0 ein:")
+a = float(input("a: "))
+b = float(input("b: "))
+c = float(input("c: "))
 
 # Berechnung der Diskriminante
 discriminant = b**2 - 4*a*c
